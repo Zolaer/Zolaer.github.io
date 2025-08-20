@@ -529,20 +529,20 @@ player:
           url: "https://music.163.com/song/media/outer/url?id=4107689.mp3"
           cover: "http://p2.music.126.net/6-BjUfTBguXXyFAdVIY0zw==/109951165276129618.jpg"
       fixed: true
-      autoplay: true
+      autoplay:
       loop: true
       order: 1
-      preload: "auto"
+      preload:
       volume: 1
-      mutex: true
-      listFolded: true
+      mutex:
+      listFolded:
 
 
 
   meting:
     # https://github.com/metowolf/MetingJS
     # if you want to use meting, please enable aplayer first
-    enable: true
+    enable: false
     meting_api: "https://api.imjad.cn/cloudmusic/"
     options:
       id: 2265921590
