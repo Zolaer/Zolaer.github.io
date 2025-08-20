@@ -548,7 +548,7 @@ player:
       id: 2265921590
       server: netease
       type: playlist
-      auto:true
+      auto: true
 
 ########################################
 # Vendor
