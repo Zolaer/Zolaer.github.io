@@ -482,7 +482,7 @@ share:
 
 # Experimental, may have a lot of bugs, open with caution!
 pjax:
-  enable: false
+  enable: true
 
 # Experimental
 # https://github.com/GoogleChromeLabs/quicklink
@@ -518,30 +518,37 @@ live2d_widgets:
 # Experimental
 # Please turn on pjax to use this feature
 player:
-  # if you enable meting, you must enable aplayer first
+  # 如果你启用 meting，必须先启用 aplayer
   aplayer:
     # https://github.com/DIYgod/APlayer
-    enable: false
+    enable: true
     options:
-      audio: []
-      fixed:
-      autoplay:
-      loop:
-      order:
-      preload: 
-      volume:
-      mutex:
-      listFolded:
+      audio:
+        - name: "Song 1"
+          artist: "Artist 1"
+          url: "https://music.163.com/song/media/outer/url?id=4107689.mp3"
+          cover: "http://p2.music.126.net/6-BjUfTBguXXyFAdVIY0zw==/109951165276129618.jpg"
+      fixed: true
+      autoplay: true
+      loop: true
+      order: 1
+      preload: "auto"
+      volume: 1
+      mutex: true
+      listFolded: true
+
+
+
   meting:
     # https://github.com/metowolf/MetingJS
     # if you want to use meting, please enable aplayer first
-    enable: false
-    meting_api: # custom api
+    enable: true
+    meting_api: "https://api.imjad.cn/cloudmusic/"
     options:
       id: 2265921590
       server: netease
       type: playlist
-      auto:
+      auto:true
 
 ########################################
 # Vendor
