@@ -1,0 +1,31 @@
+<%- if (config.player.aplayer.enable) { %>
+  <div id="aplayer"></div>
+  <script>
+    var aplayer = new APlayer({
+      element: document.getElementById('aplayer'),
+      audio: <%- JSON.stringify(config.player.aplayer.options.audio) %>,
+      fixed: <%- config.player.aplayer.options.fixed %>,
+      autoplay: <%- config.player.aplayer.options.autoplay %>,
+      loop: <%- config.player.aplayer.options.loop %>,
+      preload: <%- config.player.aplayer.options.preload %>,
+      volume: <%- config.player.aplayer.options.volume %>,
+      mutex: <%- config.player.aplayer.options.mutex %>,
+      listFolded: <%- config.player.aplayer.options.listFolded %>
+    });
+    aplayer.init();
+  </script>
+<%- } %>
+
+<%- if (config.player.meting.enable) { %>
+  <div id="meting"></div>
+  <script>
+    var meting = new Meting('#meting');
+    meting.init({
+      meting_api: "<%- config.player.meting.meting_api %>",
+      id: "<%- config.player.meting.options.id %>",
+      server: "<%- config.player.meting.options.server %>",
+      type: "<%- config.player.meting.options.type %>",
+      auto: <%- config.player.meting.options.auto %>
+    });
+  </script>
+<%- } %>
