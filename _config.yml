@@ -103,7 +103,7 @@ theme: reimu
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: https://github.com/Zolaer/Zolaer.github.io.git
+  repo: git@github.com:Zolaer/Zolaer.github.io.git
   branch: gh-pages
 
 
